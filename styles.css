@@ -11965,13 +11965,22 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.nav-link:hover {
+  color: #FA5959;
+}
+
 .custom-button {
   background-color: #FA5959;
   color: white;
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .custom-button:hover {
   background-color: white;
-  outline: 0.1rem solid #FA5959;
+  outline: 0.15rem solid #FA5959;
   color: #FA5959;
+}
+
+.fw-semi-bold {
+  font-weight: 600;
 }/*# sourceMappingURL=styles.css.map */

@@ -8,14 +8,22 @@ $theme-colors: (
   "danger": $danger
 );
 
+.nav-link:hover {
+  color: $danger;
+}
+
 .custom-button {
     background-color: $danger;
     color: white;
+    box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .custom-button:hover {
     background-color: white;
-    outline: 0.1rem solid $danger;
+    outline: 0.15rem solid $danger;
     color: $danger;
 }
 
+.fw-semi-bold {
+  font-weight: 600; 
+}
