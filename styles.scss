@@ -10,6 +10,17 @@ $theme-colors: (
   "tertiary": $tertiary
 );
 
+@media (max-width: 767px) {
+  .mt-16 {
+      margin-top: 8rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .mt-md-12 {
+      margin-top: 6rem;
+  }
+}
 .nav-link:hover {
   color: $secondary;
 }
@@ -77,3 +88,6 @@ $theme-colors: (
     top: 60px;
   }
 }
+
+//tabs
+

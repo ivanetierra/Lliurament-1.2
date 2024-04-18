@@ -11965,6 +11965,16 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+@media (max-width: 767px) {
+  .mt-16 {
+    margin-top: 8rem;
+  }
+}
+@media (min-width: 768px) {
+  .mt-md-12 {
+    margin-top: 6rem;
+  }
+}
 .nav-link:hover {
   color: #FA5959;
 }
