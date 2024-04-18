@@ -11969,18 +11969,64 @@ textarea.form-control-lg {
   color: #FA5959;
 }
 
-.custom-button {
-  background-color: #FA5959;
-  color: white;
+.btn {
   box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
-.custom-button:hover {
+.btn-primary {
+  background-color: #5265E1;
+  border-color: #5265E1;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  outline: 0.1rem solid #5265E1;
+  color: #5265E1;
+}
+
+.btn-secondary {
+  background-color: #FA5959;
+  color: white;
+}
+
+.btn-secondary:hover {
   background-color: white;
   outline: 0.15rem solid #FA5959;
   color: #FA5959;
 }
 
+.btn-tertiary {
+  background-color: #dddddd;
+  color: black;
+}
+
+.btn-tertiary:hover {
+  background-color: white;
+  outline: 0.15rem solid black;
+  color: black;
+}
+
 .fw-semi-bold {
   font-weight: 600;
+}
+
+.image-container {
+  position: relative;
+}
+
+.blue-area {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  background-color: #5265E1;
+  top: 80px;
+  right: 0;
+  z-index: -1;
+  border-bottom-left-radius: 50%;
+}
+
+@media (max-width: 576px) {
+  .blue-area {
+    top: 60px;
+  }
 }/*# sourceMappingURL=styles.css.map */
