@@ -12027,7 +12027,7 @@ body {
 .btn-secondary:hover {
   background-color: white;
   outline: 0.15rem solid #FA5959;
-  color: #FA5959;
+  color: #FA5959 !important;
 }
 
 .btn-tertiary {
@@ -12150,4 +12150,13 @@ body {
 
 .accordion-button:hover {
   color: #FA5959;
+}
+
+.form-container {
+  background-color: #5265E1;
+  color: white;
+}
+
+h6, .h6 {
+  letter-spacing: 0.2em;
 }/*# sourceMappingURL=styles.css.map */
