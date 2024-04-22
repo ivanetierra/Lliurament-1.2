@@ -12159,4 +12159,8 @@ body {
 
 h6, .h6 {
   letter-spacing: 0.2em;
+}
+
+.socials:hover {
+  color: #FA5959;
 }/*# sourceMappingURL=styles.css.map */
