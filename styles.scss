@@ -187,3 +187,28 @@ body {
   background-size: cover;
   height: 4px;
 }
+
+//faqs
+
+.faq-question {
+  font-size: 1.2em;
+  font-weight: 500;
+}
+
+.accordion {
+  --bs-accordion-btn-icon: url("./images/icon-arrow.svg");
+  --bs-accordion-btn-active-icon: url("./images/icon-arrow.svg");
+  --bs-accordion-active-bg: none;
+  --bs-accordion-btn-focus-box-shadow: none;
+  --bs-accordion-border-color: none;//var(--bs-border-color);
+  border-top: 1px solid #babcbe;
+  --bs-accordion-bg: none;
+}
+
+.accordion-item {
+  border-bottom: 1px solid #babcbe;
+}
+
+.accordion-button:hover {
+  color: $secondary;
+}
