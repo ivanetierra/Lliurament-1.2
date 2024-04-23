@@ -41,8 +41,13 @@ body {
 }
 
 .navbar {
-  //background-image: url("./images/icon-hamburger.svg");
-  --bs-navbar-toggler-icon-bg: url("./images/icon-hamburger.svg");
+  --bs-navbar-toggler-icon-bg: url("./images/xmark-solid.svg");
+
+  .navbar-toggler {
+    &.collapsed {
+      --bs-navbar-toggler-icon-bg: url("./images/icon-hamburger.svg");
+    }
+  }
 }
 
 .navbar-toggler {

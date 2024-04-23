@@ -11993,6 +11993,9 @@ body {
 }
 
 .navbar {
+  --bs-navbar-toggler-icon-bg: url("./images/xmark-solid.svg");
+}
+.navbar .navbar-toggler.collapsed {
   --bs-navbar-toggler-icon-bg: url("./images/icon-hamburger.svg");
 }
 
