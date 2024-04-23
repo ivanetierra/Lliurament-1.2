@@ -214,8 +214,15 @@ body {
   border-bottom: 1px solid #babcbe;
 }
 
-.accordion-button:hover {
-  color: $secondary;
+.accordion-button {
+  &:not(.collapsed) {
+    --bs-accordion-btn-icon: url("./images/icon-arrow.svg");
+    filter: invert(64%) sepia(74%) saturate(3102%) hue-rotate(321deg) brightness(95%) contrast(106%);
+  }
+
+  &:hover {
+    color: $secondary;
+  }
 }
 
 //form
