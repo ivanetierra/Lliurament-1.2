@@ -290,9 +290,12 @@
             <div class="col-10 col-md-4 mx-auto text-center pt-5">
                 <h6 class="mb-4">35.000+ ALREADY JOINED</h6>
                 <h2>Stay up-to-date with what we're doing</h2>
-                <form class="row my-5">
-                    <div class="col-12 col-lg-8 mb-3">
-                        <input type="email" placeholder="Enter your email address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <form class="row my-5 needs-validation" novalidate onsubmit="event.preventDefault()">
+                    <div class="col-12 position-relative col-lg-8 mb-3">
+                        <input type="email" placeholder="Enter your email address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                        <div class="invalid-tooltip">
+                            Make shure it's an email!
+                        </div>
                     </div>
                     <div class="col-12 col-lg-4">
                         <button type="submit" class="btn btn-secondary w-100">Send</button>
@@ -327,7 +330,27 @@
     
 
 
-   
+   <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+(() => {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  const forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+   </script>
 
  
 
